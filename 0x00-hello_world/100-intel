@@ -1,6 +1,2 @@
  #!/bin/bash
-
-CFILE=$1
-OUTFILE=${CFILE%.*}.s
-
-gcc -S -masm=intel $CFILE -o $OUTFILE
+gcc -S -masm=intel $CFILE
