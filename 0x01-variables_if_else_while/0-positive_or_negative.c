@@ -2,19 +2,30 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
-    srand(time(0));
-    int n = rand();
-    printf("%d ", n);
+/**
+ * main - print if the number positive,negative or 0
+ * Return: Always 0 
+ */
+int main(void)
+{
+	int n;
 
-    if (n > 0) {
-        printf("is positive\n");
-    } else if (n == 0) {
-        printf("is zero\n");
-    } else {
-        printf("is negative\n");
-    }
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-    return 0;
+	if (n > 0) 
+{
+	printf("%d is positive\n", n);
+}
+        else if (n == )
+{
+	printf("%d is zero\n", n);
+}
+        else 
+{
+	printf("%d is negative\n", n);
+}
+
+return 0;
 }
 
